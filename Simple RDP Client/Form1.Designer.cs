@@ -1,6 +1,6 @@
 ﻿namespace Simple_RDP_Client
 {
-    partial class StartForm
+    partial class Form1
     {
         /// <summary>
         /// Required designer variable.
@@ -28,13 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StartForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.label3 = new System.Windows.Forms.Label();
             this.axRDPViewer = new AxRDPCOMAPILib.AxRDPViewer();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -49,7 +50,6 @@
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.axRDPViewer)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -68,6 +68,7 @@
             this.label2.Size = new System.Drawing.Size(53, 13);
             this.label2.TabIndex = 3;
             this.label2.Text = "Подсеть:";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // button1
             // 
@@ -113,6 +114,65 @@
             this.axRDPViewer.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axRDPViewer.OcxState")));
             this.axRDPViewer.Size = new System.Drawing.Size(554, 328);
             this.axRDPViewer.TabIndex = 5;
+            this.axRDPViewer.Enter += new System.EventHandler(this.axRDPViewer_Enter);
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "6",
+            "73",
+            "75",
+            "77",
+            "79",
+            "81",
+            "83",
+            "85",
+            "91",
+            "93",
+            "95",
+            "97",
+            "99",
+            "102",
+            "103",
+            "105",
+            "107",
+            "109",
+            "112",
+            "113",
+            "111",
+            "117",
+            "121",
+            "124",
+            "125",
+            "127",
+            "129",
+            "131",
+            "134",
+            "135",
+            "137",
+            "141",
+            "143",
+            "147",
+            "149",
+            "151",
+            "208",
+            "157",
+            "159",
+            "161",
+            "163",
+            "165",
+            "175",
+            "167",
+            "169",
+            "171",
+            "173",
+            "154",
+            "205"});
+            this.comboBox1.Location = new System.Drawing.Point(9, 49);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(57, 21);
+            this.comboBox1.TabIndex = 13;
             // 
             // textBox1
             // 
@@ -121,7 +181,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(94, 21);
             this.textBox1.TabIndex = 14;
-            this.textBox1.Text = "192.168.";
+            this.textBox1.Text = "10.23.";
             // 
             // button2
             // 
@@ -146,7 +206,6 @@
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.textBox2);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Location = new System.Drawing.Point(3, 2);
             this.panel1.Name = "panel1";
@@ -217,7 +276,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.pictureBox4.Image = global::RDP_Client.Properties.Resources._1200x630bb;
+            this.pictureBox4.Image = global::Simple_RDP_Client.Properties.Resources._1200x630bb;
             this.pictureBox4.Location = new System.Drawing.Point(267, 46);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(118, 67);
@@ -232,7 +291,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.pictureBox3.Image = global::RDP_Client.Properties.Resources._58580;
+            this.pictureBox3.Image = global::Simple_RDP_Client.Properties.Resources._58580;
             this.pictureBox3.Location = new System.Drawing.Point(231, 45);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(118, 67);
@@ -284,14 +343,7 @@
             this.pictureBox1.TabIndex = 11;
             this.pictureBox1.TabStop = false;
             // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(4, 47);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(55, 20);
-            this.textBox2.TabIndex = 25;
-            // 
-            // StartForm
+            // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -300,6 +352,7 @@
             this.Controls.Add(this.RemoteDesktop1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.button1);
@@ -309,7 +362,7 @@
             this.Controls.Add(this.axRDPViewer);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.Name = "StartForm";
+            this.Name = "Form1";
             this.Text = "RDP Demon";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
@@ -335,6 +388,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label3;
         private AxRDPCOMAPILib.AxRDPViewer axRDPViewer;
+        public System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
@@ -348,7 +402,6 @@
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.TextBox textBox2;
     }
 }
 

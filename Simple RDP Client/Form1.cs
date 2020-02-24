@@ -15,7 +15,7 @@ using System.Drawing;
 
 namespace Simple_RDP_Client
 {
-    public partial class StartForm : Form
+    public partial class Form1 : Form
     {
 
         IPHostEntry host1 = Dns.GetHostEntry(Dns.GetHostName());
@@ -29,7 +29,7 @@ namespace Simple_RDP_Client
         int u = 0;
        
         List<Socket> clientSockets;
-        public StartForm()
+        public Form1()
         {
             InitializeComponent();
             axRDPViewer.Visible = false;
@@ -38,12 +38,14 @@ namespace Simple_RDP_Client
             button3.Enabled = false;
             Thread myThread = new Thread(new ThreadStart(Slushaem));
             myThread.Start();
+            Thread myThread9 = new Thread(new ThreadStart(appdate));
+            myThread9.Start();
             System.Windows.Forms.ToolTip t = new System.Windows.Forms.ToolTip();
             t.SetToolTip(button1, "Среднее время поиска 5 минут");
             this.FormBorderStyle = FormBorderStyle.FixedDialog;
             comboBox2.Visible = false;
             pictureBox3.Visible = false;
-            if(RDP_Client.Properties.Settings.Default.vnc == "1")
+            if(Properties.Settings.Default.vnc == "1")
             {
                 axRDPViewer.Visible = false;
                 listBox1.Visible = false;
@@ -51,7 +53,7 @@ namespace Simple_RDP_Client
                 label1.Visible = true;
                 pictureBox1.Visible = false;
                 button1.Visible = false;
-                textBox2.Visible = false;
+                comboBox1.Visible = false;
                 label2.Visible = false;
                 label3.Visible = false;
                 pictureBox3.Visible = true;
@@ -66,7 +68,30 @@ namespace Simple_RDP_Client
                 label4.Text = "RDP MOD";
             }
         }
-        
+        void appdate()
+        {
+            try
+            {
+                FileInfo fi = new FileInfo(@"\\10.23.6.193\обмен\Никитос\RDP V1.0\Simple RDP Client\bildapdate\RDP Demon.exe");
+                string appdate = fi.LastWriteTime.ToLongTimeString();
+                fi = new FileInfo(@"RDP Demon.exe");
+                string bild = fi.LastWriteTime.ToLongTimeString();
+                if (appdate != bild)
+                {
+                    DialogResult result = MessageBox.Show("Вышла более новая версия RDP! Обновить?", "Обновление", MessageBoxButtons.YesNo,
+            MessageBoxIcon.Information);
+                    if (result == DialogResult.Yes)
+                    {
+                        Process.Start(@"Appdater.exe");
+                        Application.Exit();
+                    }
+                }
+            }
+            catch
+            {
+
+            }
+        }
         public static void Connect(string invitation, AxRDPViewer display, string userName, string password)
         {
             display.SmartSizing = true;
@@ -93,13 +118,41 @@ namespace Simple_RDP_Client
                 zagr = 0;
                 listBox1.Items.Clear();
                 button1.Text = "Стоп";
-                combo = textBox2.Text;
+                combo = comboBox1.Text;
                 pictureBox1.Enabled = true;
                 pictureBox1.Visible = true;
                 Thread myThread2 = new Thread(new ThreadStart(zapros));
                 myThread2.Start();
+               Thread myThread3 = new Thread(new ThreadStart(zapros2));
+                myThread3.Start();
+                Thread myThread4 = new Thread(new ThreadStart(zapros3));
+                myThread4.Start();
+                Thread myThread5 = new Thread(new ThreadStart(zapros4));
+                myThread5.Start();
+                Thread myThread6 = new Thread(new ThreadStart(zapros5));
+                myThread6.Start();
+                Thread myThread7 = new Thread(new ThreadStart(zapros6));
+                myThread7.Start();
             }
+
+
         }
+
+        private void axRDPViewer_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textConnectionString_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
         void Slushaem()
         {
             TcpListener Listen_Data;
@@ -151,7 +204,7 @@ namespace Simple_RDP_Client
                     listBox1.Visible = false;
                     axRDPViewer.Visible = true;
                     label2.Visible = false;
-                    textBox2.Visible = false;
+                    comboBox1.Visible = false;
                     button1.Visible = false;
                     button2.Visible = false;
                     textBox1.Visible = false;
@@ -182,13 +235,13 @@ namespace Simple_RDP_Client
             {
                
                 Ping ping = new  Ping();
-                PingReply pingresult = ping.Send("192.168." + combo + "." + i, 200);
+                PingReply pingresult = ping.Send("10.23." + combo + "." + i, 200);
                 if (pingresult != null)
                 {
                     foreach (IPAddress ip in host1.AddressList)
                         adr = ip.ToString();
                     Byte[] SendBytes = Encoding.Default.GetBytes(adr);
-                    IPEndPoint EndPoint = new IPEndPoint(IPAddress.Parse("192.168." + combo + "." + i), 5001); // берется с Textbox-a text_IP адрес другого компьютера
+                    IPEndPoint EndPoint = new IPEndPoint(IPAddress.Parse("10.23." + combo + "." + i), 5001); // берется с Textbox-a text_IP адрес другого компьютера
                     Socket Connector = new Socket(EndPoint.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
                     try {
 
@@ -201,7 +254,7 @@ namespace Simple_RDP_Client
                     }
                    catch
                     {
-                        MessageBox.Show("Ошибка сканирования!");
+
                     }
                     if (i == 150)
                     {
@@ -221,10 +274,241 @@ namespace Simple_RDP_Client
             }
 
         }
-      
+        async void zapros2()
+         {
+
+             for (int i = 151; i <= 190; i++)
+             {
+
+                 Ping ping = new Ping();
+                 PingReply pingresult = ping.Send("10.23." + combo + "." + i, 200);
+                if (pingresult != null)
+                {
+                    foreach (IPAddress ip in host1.AddressList)
+                        adr = ip.ToString();
+                    Byte[] SendBytes = Encoding.Default.GetBytes(adr);
+                    IPEndPoint EndPoint = new IPEndPoint(IPAddress.Parse("10.23." + combo + "." + i), 5001); // берется с Textbox-a text_IP адрес другого компьютера
+                    Socket Connector = new Socket(EndPoint.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
+                    try
+                    {
+                        if (!Connector.Poll(50, SelectMode.SelectError))
+                        {
+                            Connector.Connect(EndPoint);
+                            Connector.Send(SendBytes);
+                            Connector.Close();
+                        }
+                    }
+                    catch
+                    {
+
+                    }
+
+                    if (i == 190)
+                     {
+                         zagr += 1;
+                     }
+                     if (zagr == 6)
+                     {
+                         Invoke((MethodInvoker)delegate
+                     {
+                         button1.Text = "Поиск";
+                         pictureBox1.Enabled = false;
+                         pictureBox1.Visible = false;
+                     });
+                     }
+                 }
+
+             }
+
+         }
+        async void zapros3()
+         {
+
+             for (int i = 191; i <= 210; i++)
+             {
+
+                 Ping ping = new Ping();
+                 PingReply pingresult = ping.Send("10.23." + combo + "." + i, 200);
+                 if (pingresult != null)
+                 {
+                     foreach (IPAddress ip in host1.AddressList)
+                         adr = ip.ToString();
+                     Byte[] SendBytes = Encoding.Default.GetBytes(adr);
+                    IPEndPoint EndPoint = new IPEndPoint(IPAddress.Parse("10.23." + combo + "." + i), 5001); // берется с Textbox-a text_IP адрес другого компьютера
+                     Socket Connector = new Socket(EndPoint.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
+                    try
+                    {
+                        if (!Connector.Poll(50, SelectMode.SelectError))
+                        {
+                            Connector.Connect(EndPoint);
+                            Connector.Send(SendBytes);
+                            Connector.Close();
+                        }
+                    }
+                    catch
+                    {
+
+                    }
+                    if (i == 210)
+                     {
+                         zagr += 1;
+                     }
+                     if (zagr == 6)
+                     {
+                         Invoke((MethodInvoker)delegate
+                         {
+                             button1.Text = "Поиск";
+                             pictureBox1.Enabled = false;
+                             pictureBox1.Visible = false;
+                         });
+                     }
+                 }
+
+             }
+
+         }
+        async void zapros4()
+         {
+
+             for (int i = 211; i <= 225; i++)
+             {
+
+                 Ping ping = new Ping();
+                 PingReply pingresult = ping.Send("10.23." + combo + "." + i, 200);
+                 if (pingresult != null)
+                 {
+                     foreach (IPAddress ip in host1.AddressList)
+                         adr = ip.ToString();
+                     Byte[] SendBytes = Encoding.Default.GetBytes(adr);
+                    IPEndPoint EndPoint = new IPEndPoint(IPAddress.Parse("10.23." + combo + "." + i), 5001); // берется с Textbox-a text_IP адрес другого компьютера
+                     Socket Connector = new Socket(EndPoint.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
+                    try
+                    {
+
+                        if (!Connector.Poll(50, SelectMode.SelectError)){
+                        Connector.Connect(EndPoint);
+                            Connector.Send(SendBytes);
+                            Connector.Close();
+                        }
+                    }
+                    catch
+                    {
+
+                    }
+                    if (i == 225)
+                     {
+                         zagr += 1;
+                     }
+                     if (zagr == 6)
+                     {
+                         Invoke((MethodInvoker)delegate
+                         {
+                             button1.Text = "Поиск";
+                             pictureBox1.Enabled = false;
+                             pictureBox1.Visible = false;
+                         });
+                     }
+                 }
+
+             }
+
+         }
+        async void zapros5()
+         {
+
+             for (int i = 226; i <= 235; i++)
+             {
+
+                 Ping ping = new Ping();
+                 PingReply pingresult = ping.Send("10.23." + combo + "." + i, 200);
+                 if (pingresult != null)
+                 {
+                     foreach (IPAddress ip in host1.AddressList)
+                         adr = ip.ToString();
+                     Byte[] SendBytes = Encoding.Default.GetBytes(adr);
+                    IPEndPoint EndPoint = new IPEndPoint(IPAddress.Parse("10.23." + combo + "." + i), 5001); // берется с Textbox-a text_IP адрес другого компьютера
+                     Socket Connector = new Socket(EndPoint.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
+                    try
+                    {
+                        if (!Connector.Poll(50, SelectMode.SelectError))
+                        {
+                            Connector.Connect(EndPoint);
+                            Connector.Send(SendBytes);
+                            Connector.Close();
+                        }
+                    }
+                    catch
+                    {
+
+                    }
+                    if (i == 235)
+                     {
+                         zagr += 1;
+                     }
+                     if (zagr == 6)
+                     {
+                         Invoke((MethodInvoker)delegate
+                         {
+                             button1.Text = "Поиск";
+                             pictureBox1.Enabled = false;
+                             pictureBox1.Visible = false;
+                         });
+                     }
+                 }
+
+             }
+
+         }
+        async void zapros6()
+         {
+
+             for (int i = 236; i <= 255; i++)
+             {
+
+                 Ping ping = new Ping();
+                 PingReply pingresult = ping.Send("10.23." + combo + "." + i, 200);
+                 if (pingresult != null)
+                 {
+                     foreach (IPAddress ip in host1.AddressList)
+                         adr = ip.ToString();
+                     Byte[] SendBytes = Encoding.Default.GetBytes(adr);
+                     IPEndPoint EndPoint = new IPEndPoint(IPAddress.Parse("10.23." + combo + "." + i), 5001); // берется с Textbox-a text_IP адрес другого компьютера
+                     Socket Connector = new Socket(EndPoint.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
+                    try
+                    {
+                        if (!Connector.Poll(50, SelectMode.SelectError))
+                        {
+                            Connector.Connect(EndPoint);
+                            Connector.Send(SendBytes);
+                            Connector.Close();
+                        }
+                    }
+                    catch
+                    {
+
+                    }
+                    if (i == 255)
+                     {
+                         zagr += 1;
+                     }
+                     if (zagr == 6)
+                     {
+                         Invoke((MethodInvoker)delegate
+                         {
+                             button1.Text = "Поиск";
+                             pictureBox1.Enabled = false;
+                             pictureBox1.Visible = false;
+                         });
+                     }
+                 }
+
+             }
+
+         }
+         
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (RDP_Client.Properties.Settings.Default.vnc == "1")
+            if (Properties.Settings.Default.vnc == "1")
             {
                 vncON = false;
             }
@@ -237,7 +521,7 @@ namespace Simple_RDP_Client
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("RDP Demon v3.0.0");
+            MessageBox.Show("                                            RDP Demon v3.0.0 \nУПРАВЛЕНИЕ ФЕДЕРАЛЬНОЙ СЛУЖБЫ СУДЕБНЫХ ПРИСТАВОВ \n                                 ПО КРАСНОДАРСКОМУ КРАЮ\nРазработал: \nЛучкин Н.А.\nOИиОиБ");
         }
         void zaprosRU()
         {
@@ -248,11 +532,11 @@ namespace Simple_RDP_Client
             if (pingresult != null)
             {
 
-               String host = System.Net.Dns.GetHostName();
-               System.Net.IPAddress adr = System.Net.Dns.GetHostByName(host).AddressList[0];
-               Byte[] SendBytes = Encoding.Default.GetBytes(adr.ToString());
-               IPEndPoint EndPoint = new IPEndPoint(IPAddress.Parse(ip), 5001); // берется с Textbox textIP адрес другого компьютера
-               Socket Connector = new Socket(EndPoint.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
+                    String host = System.Net.Dns.GetHostName();
+                    System.Net.IPAddress adr = System.Net.Dns.GetHostByName(host).AddressList[0];
+                    Byte[] SendBytes = Encoding.Default.GetBytes(adr.ToString());
+                IPEndPoint EndPoint = new IPEndPoint(IPAddress.Parse(ip), 5001); // берется с Textbox textIP адрес другого компьютера
+                Socket Connector = new Socket(EndPoint.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
            
                 try
                 {
@@ -304,6 +588,7 @@ namespace Simple_RDP_Client
                 axRDPViewer.Visible = false;
                 RemoteDesktop1.Visible = true;
                 pictureBox3.Visible = false;
+                //RemoteDesktop1.Authenticate("123456");
                 RemoteDesktop1.Connect(textBox1.Text);
                 RemoteDesktop1.SetScalingMode(true);
                 RemoteDesktop1.AutoScroll = true;
@@ -311,7 +596,7 @@ namespace Simple_RDP_Client
                 listBox1.Visible = false;
                 axRDPViewer.Visible = true;
                 label2.Visible = false;
-                textBox2.Visible = false;
+                comboBox1.Visible = false;
                 button1.Visible = false;
                 button2.Visible = false;
                 textBox1.Visible = false;
@@ -336,6 +621,7 @@ namespace Simple_RDP_Client
             
             
         }
+
         private void button2_Click(object sender, EventArgs e)
         {
             ip = textBox1.Text;
@@ -352,10 +638,12 @@ namespace Simple_RDP_Client
             }
             
         }
+
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             button3.Enabled = true;
         }
+
         private void label4_Click(object sender, EventArgs e)
         {
             if(vncON == false)
@@ -366,7 +654,7 @@ namespace Simple_RDP_Client
                 label1.Visible = true;
                 pictureBox1.Visible = false;
                 button1.Visible = false;
-                textBox2.Visible = false;
+                comboBox1.Visible = false;
                 label2.Visible = false;
                 label3.Visible = false;
                 pictureBox3.Visible = true;
@@ -382,14 +670,14 @@ namespace Simple_RDP_Client
             }
             else
             {
-                RDP_Client.Properties.Settings.Default.vnc = "0";
-                RDP_Client.Properties.Settings.Default.Save();
+                Properties.Settings.Default.vnc = "0";
+                Properties.Settings.Default.Save();
                 axRDPViewer.Visible = true;
                 listBox1.Visible = true;
                 button3.Visible = true;
                 label1.Visible = true;
                 button1.Visible = true;
-                textBox2.Visible = true;
+                comboBox1.Visible = true;
                 label2.Visible = true;
                 label3.Visible = true;
                 panel1.Visible = true;
@@ -404,6 +692,7 @@ namespace Simple_RDP_Client
                 label4.Text = "VNC MOD";
             }
         }
+
         private void RemoteDesktop1_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
         {
             if (e.KeyData == Keys.Escape)
@@ -411,13 +700,14 @@ namespace Simple_RDP_Client
                 if(label4.Text == "RDP MOD")
                 {
                     System.Diagnostics.Process.Start(Application.ExecutablePath);
-                    RDP_Client.Properties.Settings.Default.vnc = "1";
-                    RDP_Client.Properties.Settings.Default.Save();
+                    Properties.Settings.Default.vnc = "1";
+                    Properties.Settings.Default.Save();
                     Application.Exit();
                 }
                 
             }
         }
+
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyData == Keys.Escape)
@@ -425,8 +715,8 @@ namespace Simple_RDP_Client
                 if (label4.Text == "RDP MOD")
                 {
                     System.Diagnostics.Process.Start(Application.ExecutablePath);
-                    RDP_Client.Properties.Settings.Default.vnc = "1";
-                    RDP_Client.Properties.Settings.Default.Save();
+                    Properties.Settings.Default.vnc = "1";
+                    Properties.Settings.Default.Save();
                     Application.Exit();
                 }
 
