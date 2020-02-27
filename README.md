@@ -16,5 +16,5 @@ It was developed in 2018 with the goal of conveniently helping users. Connection
 
 # Сторонние библиотеки классов/Third-party class libraries
 
-VncSharp,AxRDPCOMAPILib
+VncSharp, AxRDPCOMAPILib
 
