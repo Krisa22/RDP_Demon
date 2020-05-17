@@ -1,0 +1,18 @@
+C:\Users\krisa\source\repos\RDP V3.0\Simple RDP Client\Simple RDP Client\obj\Release\Interop.MSTSCLib.dll
+C:\Users\krisa\source\repos\RDP V3.0\Simple RDP Client\Simple RDP Client\obj\Release\Interop.RDPCOMAPILib.dll
+C:\Users\krisa\source\repos\RDP V3.0\Simple RDP Client\Simple RDP Client\obj\Release\AxInterop.MSTSCLib.dll
+C:\Users\krisa\source\repos\RDP V3.0\Simple RDP Client\Simple RDP Client\obj\Release\AxInterop.RDPCOMAPILib.dll
+C:\Users\krisa\source\repos\RDP V3.0\Simple RDP Client\Simple RDP Client\obj\Release\RDP Client.csproj.ResolveComReference.cache
+C:\Users\krisa\source\repos\RDP V3.0\Simple RDP Client\Simple RDP Client\obj\Release\Simple_RDP_Client.StartForm.resources
+C:\Users\krisa\source\repos\RDP V3.0\Simple RDP Client\Simple RDP Client\obj\Release\RDP_Client.Properties.Resources.resources
+C:\Users\krisa\source\repos\RDP V3.0\Simple RDP Client\Simple RDP Client\obj\Release\RDP Client.csproj.GenerateResource.cache
+C:\Users\krisa\source\repos\RDP V3.0\Simple RDP Client\Simple RDP Client\obj\Release\RDP Demon.exe
+C:\Users\krisa\source\repos\RDP V3.0\Simple RDP Client\Simple RDP Client\obj\Release\RDP Demon.pdb
+C:\Users\krisa\source\repos\RDP V3.0\Simple RDP Client\Simple RDP Client\bin\Release\RDP Demon.exe.config
+C:\Users\krisa\source\repos\RDP V3.0\Simple RDP Client\Simple RDP Client\bin\Release\RDP Demon.exe
+C:\Users\krisa\source\repos\RDP V3.0\Simple RDP Client\Simple RDP Client\bin\Release\RDP Demon.pdb
+C:\Users\krisa\source\repos\RDP V3.0\Simple RDP Client\Simple RDP Client\bin\Release\Interop.MSTSCLib.dll
+C:\Users\krisa\source\repos\RDP V3.0\Simple RDP Client\Simple RDP Client\bin\Release\Interop.RDPCOMAPILib.dll
+C:\Users\krisa\source\repos\RDP V3.0\Simple RDP Client\Simple RDP Client\bin\Release\AxInterop.MSTSCLib.dll
+C:\Users\krisa\source\repos\RDP V3.0\Simple RDP Client\Simple RDP Client\bin\Release\AxInterop.RDPCOMAPILib.dll
+C:\Users\krisa\source\repos\RDP V3.0\Simple RDP Client\Simple RDP Client\obj\Release\RDP Client.csproj.CopyComplete

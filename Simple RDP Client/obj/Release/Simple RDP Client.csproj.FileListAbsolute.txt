@@ -1,0 +1,54 @@
+C:\Users\Никита\Desktop\RDP\Simple RDP Client\Simple RDP Client\bin\Release\Interop.MSTSCLib.dll
+C:\Users\Никита\Desktop\RDP\Simple RDP Client\Simple RDP Client\bin\Release\Interop.RDPCOMAPILib.dll
+C:\Users\Никита\Desktop\RDP\Simple RDP Client\Simple RDP Client\bin\Release\AxInterop.MSTSCLib.dll
+C:\Users\Никита\Desktop\RDP\Simple RDP Client\Simple RDP Client\bin\Release\AxInterop.RDPCOMAPILib.dll
+C:\Users\Никита\Desktop\RDP\Simple RDP Client\Simple RDP Client\obj\Release\Simple RDP Client.csprojResolveAssemblyReference.cache
+C:\Users\Никита\Desktop\RDP\Simple RDP Client\Simple RDP Client\obj\Release\Interop.MSTSCLib.dll
+C:\Users\Никита\Desktop\RDP\Simple RDP Client\Simple RDP Client\obj\Release\Interop.RDPCOMAPILib.dll
+C:\Users\Никита\Desktop\RDP\Simple RDP Client\Simple RDP Client\obj\Release\AxInterop.MSTSCLib.dll
+C:\Users\Никита\Desktop\RDP\Simple RDP Client\Simple RDP Client\obj\Release\AxInterop.RDPCOMAPILib.dll
+C:\Users\Никита\Desktop\RDP\Simple RDP Client\Simple RDP Client\obj\Release\Simple RDP Client.csproj.ResolveComReference.cache
+C:\Users\Никита\Desktop\RDP\Simple RDP Client\Simple RDP Client\obj\Release\Simple_RDP_Client.Form1.resources
+C:\Users\Никита\Desktop\RDP\Simple RDP Client\Simple RDP Client\obj\Release\Simple_RDP_Client.Properties.Resources.resources
+C:\Users\Никита\Desktop\RDP\Simple RDP Client\Simple RDP Client\obj\Release\Simple RDP Client.csproj.GenerateResource.Cache
+C:\Users\Никита\Desktop\RDP\Simple RDP Client\Simple RDP Client\bin\Release\RDP Demon.exe.config
+C:\Users\Никита\Desktop\RDP\Simple RDP Client\Simple RDP Client\bin\Release\RDP Demon.exe
+C:\Users\Никита\Desktop\RDP\Simple RDP Client\Simple RDP Client\bin\Release\RDP Demon.pdb
+C:\Users\Никита\Desktop\RDP\Simple RDP Client\Simple RDP Client\obj\Release\RDP Demon.exe
+C:\Users\Никита\Desktop\RDP\Simple RDP Client\Simple RDP Client\obj\Release\RDP Demon.pdb
+C:\Users\Nikita\Desktop\RDP\Simple RDP Client\Simple RDP Client\bin\Release\RDP Demon.exe.config
+C:\Users\Nikita\Desktop\RDP\Simple RDP Client\Simple RDP Client\bin\Release\RDP Demon.exe
+C:\Users\Nikita\Desktop\RDP\Simple RDP Client\Simple RDP Client\bin\Release\RDP Demon.pdb
+C:\Users\Nikita\Desktop\RDP\Simple RDP Client\Simple RDP Client\bin\Release\Interop.MSTSCLib.dll
+C:\Users\Nikita\Desktop\RDP\Simple RDP Client\Simple RDP Client\bin\Release\Interop.RDPCOMAPILib.dll
+C:\Users\Nikita\Desktop\RDP\Simple RDP Client\Simple RDP Client\bin\Release\AxInterop.MSTSCLib.dll
+C:\Users\Nikita\Desktop\RDP\Simple RDP Client\Simple RDP Client\bin\Release\AxInterop.RDPCOMAPILib.dll
+C:\Users\Nikita\Desktop\RDP\Simple RDP Client\Simple RDP Client\obj\Release\Simple RDP Client.csprojResolveAssemblyReference.cache
+C:\Users\Nikita\Desktop\RDP\Simple RDP Client\Simple RDP Client\obj\Release\Interop.MSTSCLib.dll
+C:\Users\Nikita\Desktop\RDP\Simple RDP Client\Simple RDP Client\obj\Release\Interop.RDPCOMAPILib.dll
+C:\Users\Nikita\Desktop\RDP\Simple RDP Client\Simple RDP Client\obj\Release\AxInterop.MSTSCLib.dll
+C:\Users\Nikita\Desktop\RDP\Simple RDP Client\Simple RDP Client\obj\Release\AxInterop.RDPCOMAPILib.dll
+C:\Users\Nikita\Desktop\RDP\Simple RDP Client\Simple RDP Client\obj\Release\Simple RDP Client.csproj.ResolveComReference.cache
+C:\Users\Nikita\Desktop\RDP\Simple RDP Client\Simple RDP Client\obj\Release\Simple_RDP_Client.Form1.resources
+C:\Users\Nikita\Desktop\RDP\Simple RDP Client\Simple RDP Client\obj\Release\Simple_RDP_Client.Properties.Resources.resources
+C:\Users\Nikita\Desktop\RDP\Simple RDP Client\Simple RDP Client\obj\Release\Simple RDP Client.csproj.GenerateResource.Cache
+C:\Users\Nikita\Desktop\RDP\Simple RDP Client\Simple RDP Client\obj\Release\RDP Demon.exe
+C:\Users\Nikita\Desktop\RDP\Simple RDP Client\Simple RDP Client\obj\Release\RDP Demon.pdb
+C:\Users\Никита\Desktop\RDP V1.0\Simple RDP Client\Simple RDP Client\bin\Release\RDP Demon.exe.config
+C:\Users\Никита\Desktop\RDP V1.0\Simple RDP Client\Simple RDP Client\bin\Release\RDP Demon.exe
+C:\Users\Никита\Desktop\RDP V1.0\Simple RDP Client\Simple RDP Client\bin\Release\RDP Demon.pdb
+C:\Users\Никита\Desktop\RDP V1.0\Simple RDP Client\Simple RDP Client\bin\Release\Interop.MSTSCLib.dll
+C:\Users\Никита\Desktop\RDP V1.0\Simple RDP Client\Simple RDP Client\bin\Release\Interop.RDPCOMAPILib.dll
+C:\Users\Никита\Desktop\RDP V1.0\Simple RDP Client\Simple RDP Client\bin\Release\AxInterop.MSTSCLib.dll
+C:\Users\Никита\Desktop\RDP V1.0\Simple RDP Client\Simple RDP Client\bin\Release\AxInterop.RDPCOMAPILib.dll
+C:\Users\Никита\Desktop\RDP V1.0\Simple RDP Client\Simple RDP Client\obj\Release\Interop.MSTSCLib.dll
+C:\Users\Никита\Desktop\RDP V1.0\Simple RDP Client\Simple RDP Client\obj\Release\Interop.RDPCOMAPILib.dll
+C:\Users\Никита\Desktop\RDP V1.0\Simple RDP Client\Simple RDP Client\obj\Release\AxInterop.MSTSCLib.dll
+C:\Users\Никита\Desktop\RDP V1.0\Simple RDP Client\Simple RDP Client\obj\Release\AxInterop.RDPCOMAPILib.dll
+C:\Users\Никита\Desktop\RDP V1.0\Simple RDP Client\Simple RDP Client\obj\Release\Simple RDP Client.csproj.ResolveComReference.cache
+C:\Users\Никита\Desktop\RDP V1.0\Simple RDP Client\Simple RDP Client\obj\Release\Simple_RDP_Client.Form1.resources
+C:\Users\Никита\Desktop\RDP V1.0\Simple RDP Client\Simple RDP Client\obj\Release\Simple_RDP_Client.Properties.Resources.resources
+C:\Users\Никита\Desktop\RDP V1.0\Simple RDP Client\Simple RDP Client\obj\Release\Simple RDP Client.csproj.GenerateResource.Cache
+C:\Users\Никита\Desktop\RDP V1.0\Simple RDP Client\Simple RDP Client\obj\Release\RDP Demon.exe
+C:\Users\Никита\Desktop\RDP V1.0\Simple RDP Client\Simple RDP Client\obj\Release\RDP Demon.pdb
+C:\Users\Никита\Desktop\RDP V1.0\Simple RDP Client\Simple RDP Client\obj\Release\Simple RDP Client.csprojResolveAssemblyReference.cache

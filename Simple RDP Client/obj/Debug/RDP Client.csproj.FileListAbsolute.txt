@@ -1,0 +1,21 @@
+C:\Users\krisa\source\repos\RDP V3.0\Simple RDP Client\Simple RDP Client\bin\Debug\RDP Demon.exe.config
+C:\Users\krisa\source\repos\RDP V3.0\Simple RDP Client\Simple RDP Client\bin\Debug\RDP Demon.exe
+C:\Users\krisa\source\repos\RDP V3.0\Simple RDP Client\Simple RDP Client\bin\Debug\RDP Demon.pdb
+C:\Users\krisa\source\repos\RDP V3.0\Simple RDP Client\Simple RDP Client\bin\Debug\VncSharp.dll
+C:\Users\krisa\source\repos\RDP V3.0\Simple RDP Client\Simple RDP Client\bin\Debug\Interop.MSTSCLib.dll
+C:\Users\krisa\source\repos\RDP V3.0\Simple RDP Client\Simple RDP Client\bin\Debug\Interop.RDPCOMAPILib.dll
+C:\Users\krisa\source\repos\RDP V3.0\Simple RDP Client\Simple RDP Client\bin\Debug\AxInterop.MSTSCLib.dll
+C:\Users\krisa\source\repos\RDP V3.0\Simple RDP Client\Simple RDP Client\bin\Debug\AxInterop.RDPCOMAPILib.dll
+C:\Users\krisa\source\repos\RDP V3.0\Simple RDP Client\Simple RDP Client\obj\Debug\RDP Client.csprojAssemblyReference.cache
+C:\Users\krisa\source\repos\RDP V3.0\Simple RDP Client\Simple RDP Client\obj\Debug\Interop.MSTSCLib.dll
+C:\Users\krisa\source\repos\RDP V3.0\Simple RDP Client\Simple RDP Client\obj\Debug\Interop.RDPCOMAPILib.dll
+C:\Users\krisa\source\repos\RDP V3.0\Simple RDP Client\Simple RDP Client\obj\Debug\AxInterop.MSTSCLib.dll
+C:\Users\krisa\source\repos\RDP V3.0\Simple RDP Client\Simple RDP Client\obj\Debug\AxInterop.RDPCOMAPILib.dll
+C:\Users\krisa\source\repos\RDP V3.0\Simple RDP Client\Simple RDP Client\obj\Debug\RDP Client.csproj.ResolveComReference.cache
+C:\Users\krisa\source\repos\RDP V3.0\Simple RDP Client\Simple RDP Client\obj\Debug\RDP Client.csproj.GenerateResource.cache
+C:\Users\krisa\source\repos\RDP V3.0\Simple RDP Client\Simple RDP Client\obj\Debug\RDP Client.csproj.CopyComplete
+C:\Users\krisa\source\repos\RDP V3.0\Simple RDP Client\Simple RDP Client\obj\Debug\RDP Demon.exe
+C:\Users\krisa\source\repos\RDP V3.0\Simple RDP Client\Simple RDP Client\obj\Debug\RDP Demon.pdb
+C:\Users\krisa\source\repos\RDP V3.0\Simple RDP Client\Simple RDP Client\obj\Debug\Simple_RDP_Client.Properties.Resources.resources
+C:\Users\krisa\source\repos\RDP V3.0\Simple RDP Client\Simple RDP Client\obj\Debug\Simple_RDP_Client.RDP_Client.resources
+C:\Users\krisa\source\repos\RDP V3.0\Simple RDP Client\Simple RDP Client\obj\Debug\RDP Client.csproj.CoreCompileInputs.cache
